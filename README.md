@@ -177,3 +177,19 @@ git add Brewfile
 git commit -m "chore: update Brewfile"
 git push
 ```
+
+---
+
+## ☕️ Support & Donations
+
+If you found this setup repository useful and would like to support its development and maintenance, donations are greatly appreciated!
+
+| Currency | Network | Wallet Address |
+| :--- | :--- | :--- |
+| **BTC** | Native SegWit | `bc1qec7awee6j6ym34jy6qq9uswa397lvvw69cytyq` |
+| **ETH** | Ethereum (ERC-20) | `0xd1f197009cbe1e7eea91ccf8c216aa7899cdc224` |
+| **USDT** | ERC-20 / BEP-20 | `0xd1f197009cbe1e7eea91ccf8c216aa7899cdc224` |
+| **BNB** | BNB Smart Chain (BEP-20) | `0xd1f197009cbe1e7eea91ccf8c216aa7899cdc224` |
+
+Thank you for your support! ❤️
+
