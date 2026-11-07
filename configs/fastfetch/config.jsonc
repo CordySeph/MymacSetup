@@ -1,0 +1,79 @@
+{
+  "$schema": "https://github.com/fastfetch-cli/fastfetch/raw/dev/doc/json_schema.json",
+  "logo": {
+    "type": "small",
+    "color": {
+      "1": "blue",
+      "2": "cyan"
+    },
+    "padding": {
+      "top": 1,
+      "left": 2,
+      "right": 3
+    }
+  },
+  "display": {
+    "separator": " 󰄾 ",
+    "color": {
+      "keys": "blue",
+      "title": "cyan"
+    }
+  },
+  "modules": [
+    {
+      "type": "title",
+      "format": "{user-name-colored} 󰞵 {host-name-colored}"
+    },
+    {
+      "type": "separator",
+      "string": "─"
+    },
+    {
+      "type": "os",
+      "key": "󰀵 OS",
+      "keyColor": "blue"
+    },
+    {
+      "type": "kernel",
+      "key": "󰒋 Kernel",
+      "keyColor": "blue"
+    },
+    {
+      "type": "uptime",
+      "key": "󱑂 Uptime",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "shell",
+      "key": "󰞷 Shell",
+      "keyColor": "cyan"
+    },
+    {
+      "type": "terminal",
+      "key": "󰞵 Terminal",
+      "keyColor": "magenta"
+    },
+    {
+      "type": "cpu",
+      "key": "󰘚 CPU",
+      "keyColor": "green"
+    },
+    {
+      "type": "gpu",
+      "key": "󰢮 GPU",
+      "keyColor": "green"
+    },
+    {
+      "type": "memory",
+      "key": "󰍛 Memory",
+      "keyColor": "yellow"
+    },
+    {
+      "type": "break"
+    },
+    {
+      "type": "colors",
+      "symbol": "circle"
+    }
+  ]
+}

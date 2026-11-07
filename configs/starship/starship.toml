@@ -1,0 +1,130 @@
+# Tokyo Night Starship Configuration
+
+# Timeout for commands executed by starship (ms)
+command_timeout = 1000
+
+# Inserts a blank line between shell prompts
+add_newline = true
+
+# Prompt format
+format = """
+$os\
+$directory\
+$git_branch\
+$git_status\
+$package\
+$nodejs\
+$python\
+$golang\
+$rust\
+$docker_context\
+$cmd_duration\
+$line_break\
+$character"""
+
+# Tokyo Night Color Palette
+palette = "tokyonight"
+
+[palettes.tokyonight]
+bg = "#1a1b26"
+bg_highlight = "#292e42"
+fg = "#c0caf5"
+black = "#15161e"
+red = "#f7768e"
+orange = "#ff9e64"
+yellow = "#e0af68"
+green = "#9ece6a"
+teal = "#73daca"
+cyan = "#7dcfff"
+blue = "#7aa2f7"
+magenta = "#bb9af7"
+purple = "#9d7cd8"
+white = "#a9b1d6"
+comment = "#565f89"
+
+[character]
+success_symbol = "[❯](bold cyan)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold green)"
+
+[os]
+disabled = false
+style = "bold blue"
+
+[os.symbols]
+Macos = "󰀵 "
+Ubuntu = "󰕈 "
+Debian = "󰣚 "
+Arch = "󰣇 "
+Linux = "󰌽 "
+Windows = "󰍲 "
+
+[directory]
+style = "bold blue"
+read_only = " 󰌾"
+read_only_style = "red"
+truncation_length = 3
+truncation_symbol = "…/"
+home_symbol = "󰋜 ~"
+
+[directory.substitutions]
+"Documents" = "󰈙 Documents"
+"Downloads" = "󰉍 Downloads"
+"Music" = "󰝚 Music"
+"Pictures" = "󰉏 Pictures"
+"Projects" = "󰲋 Projects"
+"Developer" = "󰲋 Developer"
+
+[git_branch]
+symbol = " "
+style = "bold magenta"
+format = "[$symbol$branch]($style) "
+
+[git_status]
+style = "bold yellow"
+format = '([\[$all_status$ahead_behind\]]($style) )'
+conflicted = "🏳 "
+ahead = "⇡${count} "
+behind = "⇣${count} "
+diverged = "⇕⇡${ahead_count}⇣${behind_count} "
+untracked = "${count} "
+stashed = "📦 "
+modified = " ${count} "
+staged = " ${count} "
+renamed = "» "
+deleted = " ${count} "
+
+[cmd_duration]
+min_time = 2_000
+style = "bold yellow"
+format = "[$style󱎫 $duration]($style) "
+
+[nodejs]
+symbol = "󰌢 "
+style = "bold green"
+format = "[$symbol($version )]($style)"
+
+[python]
+symbol = "󰌠 "
+style = "bold yellow"
+format = '[$symbol($version )(\($virtualenv\) )]($style)'
+
+[golang]
+symbol = "󰟓 "
+style = "bold cyan"
+format = "[$symbol($version )]($style)"
+
+[rust]
+symbol = "󱘗 "
+style = "bold red"
+format = "[$symbol($version )]($style)"
+
+[docker_context]
+symbol = "󰡨 "
+style = "bold blue"
+format = "[$symbol$context]($style) "
+
+[package]
+symbol = "󰏗 "
+style = "bold orange"
+format = "[$symbol$version]($style) "
